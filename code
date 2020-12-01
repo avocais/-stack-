@@ -1,18 +1,16 @@
-#include <stdio.h>                          // библиотека для реализации кода
+stack = []
 
+stack.append('a')
+stack.append('b')
+stack.append('c')
 
-double multiplyByTwo(double ais) {         //создаем функцию и его переменные под названием ais и twice, так как мы удваиваем;
-	double twice = ais * 2.0;
-	return twice;               //затем мы завершаем функцию с помощью return;
-}
+print('Initial stack')
+print(stack)
 
-int main(int argc, char* argv[])          //сперва мы создаем функцию main()                  
-{
-	int Age = 18;                            //простая переменная для возраста 
-	double Salary = 42500;                     //вторая переменная для зарплаты 
-	double MyMassive[3] = {1.0, 2.0, 3.0};     //третья переменная для нашего массива который состоит из трёх
+print('\nElements poped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
 
-	printf("x2 version of your salary will be %.3f\n", multiplyByTwo(Salary));    //пишем чтобы при выводе отображалось
-
-	return 0;                    // завершаем
-}
+print('\nStack after elements are poped:')
+print(stack)
